@@ -1,10 +1,12 @@
-#include 'main.h'
+#include "main.h"
 
 /**
   * main - Entry point
-  * Description: 'print _putchar'
-  * Return: Always 0
+  * Description: print _putchar using putchar prototype
+  *
+  * Return: Always 0 (success)
   */
+
 int main(void)
 {
 	char str[] = "_putchar";
