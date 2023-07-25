@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -9,12 +9,17 @@
   */
 void print_rev(char *s)
 {
-	int a = 0;
-	while (s[a])
-		a++
-	while (a--)
+	int c = 0;
+
+	while (s[c] != '\0')
 	{
-		_putchar(s[a]);
+		c++;
 	}
+
+	for (c -= 1; c >= 0; c--)
+	{
+		_putchar(s[c]);
+	}
+
 	_putchar('\n');
 }
