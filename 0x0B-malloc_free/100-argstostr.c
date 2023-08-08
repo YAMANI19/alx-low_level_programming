@@ -40,4 +40,5 @@ char *argstostr(int ac, char **av)
 		a++;
 	}
 
-	retur
+	return (retp);
+}
