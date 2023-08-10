@@ -1,36 +1,30 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * *array_range - make  memory for an array
- * @min: int type
- * @max: int type
- * Return:  return pointer to array
+ * *_calloc - function to allocates memory
+ * @nmemb: unsigned int type
+ * @size: unsigned int type
+ * Return: return pointer to array
  */
-
-int *array_range(int min, int max)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr;
-	int arr;
+	char *ptr;
+	unsigned int count;
 
-	if (min > max)
-	{
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-	}
-
-	ptr = malloc(sizeof(int) * (max - min + 1));
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	arr = 0;
-	while (min <= max)
+	count = 0;
+	while (count < nmemb * size)
 	{
-		ptr[arr] = min;
-		min++;
-		arr++;
+		ptr[count] = 0;
+		count++;
 	}
 	return (ptr);
 }
