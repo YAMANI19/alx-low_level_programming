@@ -1,5 +1,5 @@
-#ifndef _MACRO_
-#define _MARCO_
+#ifndef HD_FILE
+#define HD_FILE
 
 #define SIZE 1024
 
